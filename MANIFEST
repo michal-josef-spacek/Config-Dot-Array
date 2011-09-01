@@ -1,0 +1,21 @@
+Array.pm
+CHANGES
+inc/Module/Install.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+t/Config-Dot-Array/00-use.t
+t/Config-Dot-Array/01-version.t
+t/Config-Dot-Array/02-pod_coverage.t
+t/Config-Dot-Array/03-pod.t
+t/Config-Dot-Array/04-new.t
+t/Config-Dot-Array/05-parse.t
+t/Config-Dot-Array/06-reset.t
+t/Config-Dot-Array/07-serialize.t
