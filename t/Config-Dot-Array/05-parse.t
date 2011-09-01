@@ -5,6 +5,7 @@ use warnings;
 # Modules.
 use Config::Dot::Array;
 use English qw(-no_match_vars);
+use Error::Pure::Utils qw(clean);
 use Test::More 'tests' => 4;
 
 # Test.
@@ -44,6 +45,7 @@ is($EVAL_ERROR, "Bad key ';' in string ';=' at line '1'.\n",
 	'Bad key.');
 
 # Test.
+clean();
 $c->reset;
 my $multiple = <<'END';
 key=value1

@@ -20,6 +20,7 @@ resources 'repository' => {
 	'type' => 'git',
 };
 test_requires 'English' => 0;
+test_requires 'Error::Pure::Utils' => 0.05;
 test_requires 'File::Object' => 0.03;
 test_requires 'Test::More' => 0;
 test_requires 'Test::Pod' => 0;

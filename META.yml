@@ -4,6 +4,7 @@ author:
   - 'Michal Špaček <skim@cpan.org>'
 build_requires:
   English: 0
+  Error::Pure::Utils: 0.05
   ExtUtils::MakeMaker: 6.42
   File::Object: 0.03
   Test::More: 0
