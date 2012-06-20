@@ -5,15 +5,16 @@ author:
 build_requires:
   English: 0
   Error::Pure::Utils: 0.05
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
   File::Object: 0.03
   Test::More: 0
   Test::Pod: 0
   Test::Pod::Coverage: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
-generated_by: 'Module::Install version 1.01'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: bsd
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,9 +30,8 @@ requires:
   Error::Pure: 0.05
   Readonly: 0
 resources:
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Config-Dot-Array
+  homepage: https://github.com/tupinek/Config-Dot-Array
   license: http://opensource.org/licenses/bsd-license.php
-  repository:
-    type: git
-    url: git://github.com/tupinek/Config-Dot-Array
-    web: https://github.com/tupinek/Config-Dot-Array
+  repository: git://github.com/tupinek/Config-Dot-Array
 version: 0.01
