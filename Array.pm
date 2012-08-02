@@ -6,7 +6,7 @@ use warnings;
 
 # Modules.
 use Class::Utils qw(set_params);
-use Config::Utils qw(hash);
+use Config::Utils qw(hash_array);
 use English qw(-no_match_vars);
 use Error::Pure qw(err);
 use Readonly;
@@ -128,7 +128,7 @@ sub _parse {
 	}
 
 	my @tmp = split m/\./ms, $key;
-	hash($self, \@tmp, $val);
+	hash_array($self, \@tmp, $val);
 
 	# Ok.
 	return 1;
@@ -270,7 +270,13 @@ Serialize 'config' hash to output.
  $dump->dumpValues($struct_hr);
 
  # Output:
- # TODO
+ # 0  HASH(0x9970430)
+ #    'key1' => 'value1'
+ #    'key2' => ARRAY(0x9970660)
+ #       0  'value2'
+ #       1  'value3'
+ #    'key3' => HASH(0x9970240)
+ #       'subkey1' => 'value4'
 
 =head1 EXAMPLE2
 
