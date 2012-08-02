@@ -321,6 +321,10 @@ L<Readonly>.
 L<Cnf>,
 L<Cnf::More>.
 
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Config-Dot-Array>
+
 =head1 AUTHOR
 
 Michal Špaček L<mailto:skim@cpan.org>
