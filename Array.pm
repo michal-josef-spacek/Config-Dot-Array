@@ -53,7 +53,7 @@ sub parse {
 	if (ref $string_or_array_ref eq 'ARRAY') {
 		@text = @{$string_or_array_ref};
 	} else {
-		@text = split m/$INPUT_RECORD_SEPARATOR/sm,
+		@text = split m/$INPUT_RECORD_SEPARATOR/ms,
 			$string_or_array_ref;
 	}
 	foreach my $line (@text) {
@@ -106,15 +106,15 @@ sub _parse {
 	my ($self, $string) = @_;
 
 	# Remove comments on single line.
-	$string =~ s/^\s*#.*$//sm;
+	$string =~ s/^\s*#.*$//ms;
 
 	# Blank space.
-	if ($string =~ m/^\s*$/sm) {
+	if ($string =~ m/^\s*$/ms) {
 		return 0;
 	}
 
 	# Split.
-	my ($key, $val) = split m/=/sm, $string, 2;
+	my ($key, $val) = split m/=/ms, $string, 2;
 
 	# Not a key.
 	if (length $key < 1) {
@@ -122,12 +122,12 @@ sub _parse {
 	}
 
 	# Bad key.
-	if ($key !~ m/^[-\w\.:,]+\+?$/sm) {
+	if ($key !~ m/^[-\w\.:,]+\+?$/ms) {
 		err "Bad key '$key' in string '$string' at line ".
 			"'$self->{'count'}'.";
 	}
 
-	my @tmp = split m/\./sm, $key;
+	my @tmp = split m/\./ms, $key;
 	hash($self, \@tmp, $val);
 
 	# Ok.
@@ -270,14 +270,7 @@ Serialize 'config' hash to output.
  $dump->dumpValues($struct_hr);
 
  # Output:
- # 0  HASH(0x84b98a0)
- #    'key1' => 'value1',
- #    'key2' => ARRAY()
  # TODO
- #       ['value2',
- #        'value3'],
- #    'key3' => HASH(0x8da3ab0)
- #       'subkey1' => 'value3',
 
 =head1 EXAMPLE2
 
