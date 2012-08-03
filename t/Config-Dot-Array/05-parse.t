@@ -6,7 +6,7 @@ use warnings;
 use Config::Dot::Array;
 use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 5;
 
 # Test.
 my $c = Config::Dot::Array->new;
@@ -57,4 +57,24 @@ is_deeply(
 	{
 		'key' => ['value1', 'value2'],
 	},
+);
+
+# Test.
+$c = Config::Dot::Array->new(
+	'callback' => sub {
+		my (undef, $val) = @_;
+		if ($val == 1) {
+			return 'XXX',
+		}
+		return $val;
+	}
+);
+$ret = $c->parse(['key1=1', 'key2=2', 'key2=1']);
+is_deeply(
+	$ret,
+	{
+		'key1' => 'XXX',
+		'key2' => ['2', 'XXX'],
+	},
+	'Parsing with callback.',
 );

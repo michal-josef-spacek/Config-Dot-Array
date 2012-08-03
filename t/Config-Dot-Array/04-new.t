@@ -5,10 +5,18 @@ use warnings;
 # Modules.
 use Config::Dot::Array;
 use English qw(-no_match_vars);
-use Test::More 'tests' => 5;
+use Test::More 'tests' => 7;
 
 # Test.
 my $obj = Config::Dot::Array->new;
+isa_ok($obj, 'Config::Dot::Array');
+
+# Test.
+$obj = Config::Dot::Array->new(
+	'callback' => sub {
+		return 1;
+	},
+);
 isa_ok($obj, 'Config::Dot::Array');
 
 # Test.
@@ -41,3 +49,12 @@ eval {
 };
 is($EVAL_ERROR, "Bad 'config' parameter.\n",
 	'Bad \'config\' parameter.');
+
+# Test.
+eval {
+	Config::Dot::Array->new(
+		'callback' => 'FOOBAR',
+	);
+};
+is($EVAL_ERROR, "Parameter 'callback' isn't code reference.\n",
+	'Parameter \'callback\' isn\'t code reference.');
