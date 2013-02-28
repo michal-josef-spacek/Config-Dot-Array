@@ -5,7 +5,8 @@ use warnings;
 # Modules.
 use Config::Dot::Array;
 use English qw(-no_match_vars);
-use Test::More 'tests' => 7;
+use Test::More 'tests' => 8;
+use Test::NoWarnings;
 
 # Test.
 my $obj = Config::Dot::Array->new;

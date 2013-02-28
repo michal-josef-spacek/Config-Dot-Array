@@ -6,7 +6,8 @@ use warnings;
 use Config::Dot::Array;
 use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 5;
+use Test::More 'tests' => 6;
+use Test::NoWarnings;
 
 # Test.
 my $c = Config::Dot::Array->new;
