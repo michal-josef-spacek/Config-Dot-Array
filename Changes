@@ -1,5 +1,6 @@
 0.03
  - Fix ERRORS section in doc.
+ - Rewrite B<> to C<> in doc for code parameters and methods.
 
 0.02 2013-09-21
  - Add Test::NoWarnings to tests.
