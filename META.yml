@@ -31,6 +31,7 @@ requires:
   Config::Utils: 0.03
   Error::Pure: 0.09
   Readonly: 0
+  perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Config-Dot-Array
   homepage: https://github.com/tupinek/Config-Dot-Array

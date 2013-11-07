@@ -14,6 +14,7 @@ requires 'Class::Utils' => 0.03;
 requires 'Config::Utils' => 0.03;
 requires 'Error::Pure' => 0.09;
 requires 'Readonly' => 0;
+requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Config-Dot-Array';
 resources 'homepage' => 'https://github.com/tupinek/Config-Dot-Array';
