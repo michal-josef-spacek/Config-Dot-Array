@@ -10,6 +10,7 @@ abstract 'Module for simple configure file parsing with arrays.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Config-Dot-Array';
+readme_from 'Array.pm';
 requires 'Class::Utils' => 0.03;
 requires 'Config::Utils' => 0.03;
 requires 'Error::Pure' => 0.09;
