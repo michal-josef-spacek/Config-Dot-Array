@@ -5,7 +5,7 @@ use warnings;
 # Modules.
 use Config::Dot::Array;
 use English qw(-no_match_vars);
-use Test::More 'tests' => 8;
+use Test::More 'tests' => 10;
 use Test::NoWarnings;
 
 # Test.
@@ -50,6 +50,29 @@ eval {
 };
 is($EVAL_ERROR, "Bad 'config' parameter.\n",
 	'Bad \'config\' parameter.');
+
+# Test.
+eval {
+	Config::Dot::Array->new(
+		'config' => {
+			'key' => [sub {}],
+		},
+	);
+};
+is($EVAL_ERROR, "Bad 'config' parameter.\n",
+	'Bad \'config\' parameter.');
+
+# Test.
+$obj = Config::Dot::Array->new(
+	'config' => {
+		'key' => [{
+			'subkey1' => 'val1',
+		}, {
+			'subkey2' => 'val2',
+		}],
+	},
+);
+isa_ok($obj, 'Config::Dot::Array');
 
 # Test.
 eval {

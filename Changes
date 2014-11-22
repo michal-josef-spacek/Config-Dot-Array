@@ -1,5 +1,6 @@
 0.04
  - Add 'readme_from' directive to Makefile.PL.
+ - Add tests for new() method.
  - Add tests for serialize() method.
  - Fix LICENSE file.
  - Fix LICENSE AND COPYRIGHT section in doc.

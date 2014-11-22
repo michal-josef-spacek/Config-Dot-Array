@@ -2,7 +2,17 @@ TODO
 ====
 2. CONCEPT
 4. Podedit Config::Dot?
-5.
+5. Co s prikladem ala:
+   $obj = Config::Dot::Array->new(
+   	'config' => {
+   		'key' => [{
+   			'subkey1' => 'val1',
+   		}, {
+   			'subkey2' => 'val2',
+   		}],
+   	},
+   );
+6.
 
 Applied
 =======
