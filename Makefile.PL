@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Module for simple configure file parsing with arrays.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Config-Dot-Array';
 readme_from 'Array.pm';
