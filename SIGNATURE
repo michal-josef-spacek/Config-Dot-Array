@@ -14,40 +14,41 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 7476c9d1811c8fd4b6ed192b476598f5a70d4a7a Array.pm
-SHA1 1f4adf984202b3e9eb04773425753e49e367e0cf Changes
-SHA1 1fad52740563da33cea5c5c7a60aeeff88528bf5 LICENSE
-SHA1 6be11442f2e4e17a11807906ba638bb30fdce6b0 MANIFEST
-SHA1 d708af3c963e62f54924325b82b0bb201d529785 META.yml
-SHA1 73af4d0a53df8208384ded97d72b8b864f3f709a Makefile.PL
-SHA1 40df3c360ae025ea4231bc47e16cd9a2f1c58ff9 README
+SHA1 bce1d82fa566f9320272a8157ac96a346c75c06b Array.pm
+SHA1 83df06aa9f40cb93db7597754a243025eafc1612 Changes
+SHA1 e274f86dfcc92b6d3243fe3e117da1e4cdfab6c3 LICENSE
+SHA1 9f3af45382176fd12a4688f9c43e428a8c73d8a9 MANIFEST
+SHA1 bdf1865104941992e21f3b5cd8ceba8093e07ad8 META.yml
+SHA1 93e4c22d6001b76101761d720def7e4cf86bf72c Makefile.PL
+SHA1 91b3f805aae513e54e8fe1256ff5de07af38f4e7 README
 SHA1 023c20c9a394e4523f852780177686caa95f6819 examples/ex1.pl
 SHA1 03795de5ea81995cdbdaf54fde81aaeb82c43fe7 examples/ex2.pl
 SHA1 faca5c6b934ce9be4d510bed412fc8011169e5dc examples/ex3.pl
-SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
-SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
-SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
-SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
-SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
-SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
-SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
-SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
+SHA1 d2664c57b65686abbfbbe1e71229761625be4922 inc/Module/Install.pm
+SHA1 da41a8d9904f7b409b49a5f6c338d3eb305a2b4b inc/Module/Install/Base.pm
+SHA1 0db0afe19cd298abba248fa089e5525bd5ab3ab6 inc/Module/Install/Can.pm
+SHA1 e7152bfd5ca67d0e33f96d09c59d600bca5c1f15 inc/Module/Install/Fetch.pm
+SHA1 29ee1cb0dc262b00983e3a2f5cf00b538dff5069 inc/Module/Install/Makefile.pm
+SHA1 e963f80cfe255f16e55067d1feb6841cff3ed2fe inc/Module/Install/Metadata.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 65a1f09af1f4f9e47a98b6b45667c328b1b2f9c0 inc/Module/Install/Win32.pm
+SHA1 f191c49475b3f51775180cd4f7e41e3bdab7f85a inc/Module/Install/WriteAll.pm
 SHA1 cdab1f2c34866f4a94b1803e0bf2bb4850426995 t/Config-Dot-Array/00-use.t
-SHA1 76b0d5a014ecb54db505ce944f306e2963b1cd25 t/Config-Dot-Array/01-version.t
+SHA1 5d4c81eaa9082ddb58ddcfbc8eb5abae4cf5d516 t/Config-Dot-Array/01-version.t
 SHA1 b6a9ee301d3101e49d6893f435fdd594ff57acbb t/Config-Dot-Array/02-pod_coverage.t
 SHA1 0d59a1685f1f7ea29f577472d1870bcc0d7efd34 t/Config-Dot-Array/03-pod.t
-SHA1 31d5e38b708f789f917cc3847ce128da8e660345 t/Config-Dot-Array/04-new.t
+SHA1 9e67caba6401ffd5af90d38bed781cba2cbae801 t/Config-Dot-Array/04-new.t
 SHA1 5d6211120bdc2d228bee9926e9ffd992a8dff8fb t/Config-Dot-Array/05-parse.t
 SHA1 e5f0670960e20ce48490b07219b56bcd5ed999ef t/Config-Dot-Array/06-reset.t
-SHA1 f4443c07a89c65987cf89ff598751520557e8107 t/Config-Dot-Array/07-serialize.t
+SHA1 f790dd09f397fcb381aa25d247fcadbc1a397d93 t/Config-Dot-Array/07-serialize.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJSe2r5AAoJEAwa+cf4dLBaee8IAMLmVFnMs3CrqefGMfiYj64Z
-uDBP2qvggcTAxKjUUjmZWVGwAm4Bl68Um/hSkH4kdU3JQwd90oVR0vWBA+/pjGYd
-CCQnZFSErDqFOeb66b5KgReyndj3WEp+ErODBT8A0/wcSm+zHhS7gDzVqY5o/K+K
-hUkzVOqEuOtMMqjlB1bsJvtlS0nZT54wYM7Cxoonz9QjVQAt0qGBd6YV8nj/KWDz
-20lrR+35pKySgM1VSJc29FsvRJ4/gcM3DOaXoul9kWRzg1AariNldtuPdWWuTgfD
-Ta5GUW2WupHbf9jv5Wq50e6E29mpMcvRiLNdMZz/du3lvNawFFlNzQco/5j1hyQ=
-=0kC7
+iQEcBAEBAgAGBQJUcRBOAAoJEAwa+cf4dLBaH0sH/jY5UaiGaEEhXqwNZaWjIm7g
+EX9rMKDVOzCGGEx31ywyo2nuDRuSOyzQIO/XE1PcHrzlHdANgY8ptsq48SwkiguA
+Jd8wRWvsTUkDMcRgtQKralME+kqFUWvnzVOhEmwvWAxYpID5xgjWceM+td+KrncC
+uKfgBrm9ALYcuSwLTtZbmT1Y6TKEeP9XkkRAw0b+heohUDyDlZmhVa8H/ENdhbOV
+RUj4E0r8lAgkBC/dRUpP/fcJeLav5WD5mwEhZXnhN+jIPPNWUAd81u9lnGSnPp7P
+YBje2xolIpsWp2t4/WjdNK4htve3V2jjf+52gNnB8qE8wBjGKrqZYqirP7T/YIM=
+=6Z0p
 -----END PGP SIGNATURE-----

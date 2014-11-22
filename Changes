@@ -1,4 +1,4 @@
-0.04
+0.04 2014-11-22T23:37:36+01:00
  - Add 'readme_from' directive to Makefile.PL.
  - Add tests for new() method.
  - Add tests for serialize() method.
