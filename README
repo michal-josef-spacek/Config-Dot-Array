@@ -176,7 +176,11 @@ DEPENDENCIES
     Class::Utils, Config::Utils, English, Error::Pure, Readonly.
 
 SEE ALSO
-    Cnf, Cnf::More.
+    Config::Dot
+        Module for simple configure file parsing.
+
+    Config::Utils
+        Common config utilities.
 
 REPOSITORY
     <https://github.com/tupinek/Config-Dot-Array>

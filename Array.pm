@@ -380,8 +380,17 @@ L<Readonly>.
 
 =head1 SEE ALSO
 
-L<Cnf>,
-L<Cnf::More>.
+=over
+
+=item L<Config::Dot>
+
+Module for simple configure file parsing.
+
+=item L<Config::Utils>
+
+Common config utilities.
+
+=back
 
 =head1 REPOSITORY
 
