@@ -1,20 +1,16 @@
 package Config::Dot::Array;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Class::Utils qw(set_params);
 use Config::Utils qw(hash_array);
 use English qw(-no_match_vars);
 use Error::Pure qw(err);
 use Readonly;
 
-# Constants.
 Readonly::Scalar my $EMPTY_STR => q{};
 
-# Version.
 our $VERSION = 0.06;
 
 # Constructor.
