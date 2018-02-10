@@ -263,11 +263,9 @@ Serialize 'config' hash to output.
 
 =head1 EXAMPLE1
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Config::Dot::Array;
  use Dumpvalue;
 
@@ -297,11 +295,9 @@ Serialize 'config' hash to output.
 
 =head1 EXAMPLE2
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Config::Dot::Array;
 
  # Object with data.
@@ -327,11 +323,9 @@ Serialize 'config' hash to output.
 
 =head1 EXAMPLE3
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Config::Dot::Array;
  use Dumpvalue;
 
