@@ -263,6 +263,8 @@ Serialize 'config' hash to output.
 
 =head1 EXAMPLE1
 
+=for comment filename=parse_config_and_dump.pl
+
  use strict;
  use warnings;
 
@@ -295,6 +297,8 @@ Serialize 'config' hash to output.
 
 =head1 EXAMPLE2
 
+=for comment filename=serialize_config_and_print.pl
+
  use strict;
  use warnings;
 
@@ -322,6 +326,8 @@ Serialize 'config' hash to output.
  # key2=value3
 
 =head1 EXAMPLE3
+
+=for comment filename=parse_config_and_dump_with_callback.pl
 
  use strict;
  use warnings;
