@@ -384,7 +384,7 @@ Common config utilities.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Config-Dot-Array>
+L<https://github.com/michal-josef-spacek/Config-Dot-Array>
 
 =head1 AUTHOR
 
