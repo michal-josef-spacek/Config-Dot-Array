@@ -180,6 +180,7 @@ Config::Dot::Array - Module for simple configure file parsing with arrays.
 =head1 SYNOPSIS
 
  my $cnf = Config::Dot::Array->new(%params);
+
  my $struct_hr = $cnf->parse($string);
  $cnf->reset;
  my $serialized = $cnf->serialize;
