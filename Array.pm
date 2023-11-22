@@ -181,55 +181,67 @@ Config::Dot::Array - Module for simple configure file parsing with arrays.
 
  my $cnf = Config::Dot::Array->new(%params);
 
- my $struct_hr = $cnf->parse($string);
+ my $struct_hr = $cnf->parse($string_or_array_ref);
  $cnf->reset;
  my $serialized = $cnf->serialize;
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new(%params)>
-
- Constructor.
+Constructor.
 
 =over 8
 
 =item * C<callback>
 
- Callback code for adding parameter.
- Callback arguments are:
+Callback code for adding parameter.
+Callback arguments are:
+
  $key_ar - Reference to array with keys.
  $value - Key value.
- Default is undef.
+
+Default is undef.
 
 =item * C<config>
 
- Reference to hash structure with default config data.
- This is hash of hashes or arrays structure.
- Default value is reference to blank hash.
+Reference to hash structure with default config data.
+This is hash of hashes or arrays structure.
+
+Default value is reference to blank hash.
 
 =item * C<set_conflicts>
 
- Set conflicts detection as error.
- Default value is 1.
+Set conflicts detection as error.
+
+Default value is 1.
 
 =back
 
-=item C<parse($string_or_array_ref)>
+=head2 C<parse>
 
-Parse string $string_or_array_ref or reference to array 
-$string_or_array_ref and returns hash structure.
+ my $struct_hr = $cnf->parse($string_or_array_ref);
 
-=item C<reset()>
+Parse string C<$string_or_array_ref> or reference to array 
+C<$string_or_array_ref> and returns structure.
+
+Returns reference to hash.
+
+=head2 C<reset>
+
+ $cnf->reset;
 
 Reset content in class (config parameter).
 
-=item C<serialize()>
+Returns undef.
 
-Serialize 'config' hash to output.
+=head2 C<serialize>
 
-=back
+ my $serialized = $cnf->serialize;
+
+Serialize 'config' parameter hash to output.
+
+Returns string.
 
 =head1 PARAMETER_FILE
 
